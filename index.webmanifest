@@ -1,0 +1,18 @@
+{
+  "name": "Rudolf Lioutikov",
+  "short_name": "Rudolf Lioutikov",
+  "lang": "en-us",
+  "theme_color": "#2962ff",
+  "background_color": "#2962ff",
+  "icons": [{
+    "src": "/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_192x192_fill_lanczos_center_2.png",
+    "sizes": "192x192",
+    "type": "image/png"
+    }, {
+    "src": "/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png",
+    "sizes": "512x512",
+    "type": "image/png"
+     }],
+  "display": "standalone",
+  "start_url": "/?utm_source=web_app_manifest"
+}

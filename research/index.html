@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Rudolf Lioutikov">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://www.cs.utexas.edu/~rudi/research/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="../css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="../index.webmanifest">
+  <link rel="icon" type="image/png" href="../images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="../images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://www.cs.utexas.edu/~rudi/research/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Rudolf Lioutikov">
+  <meta property="og:url" content="https://www.cs.utexas.edu/~rudi/research/">
+  <meta property="og:title" content="Research | Rudolf Lioutikov">
+  <meta property="og:description" content=""><meta property="og:image" content="https://www.cs.utexas.edu/~rudi/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://www.cs.utexas.edu/~rudi/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+    
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Research | Rudolf Lioutikov</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+    
+      
+    
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar " id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="../">Rudolf Lioutikov<div class="navbar-brand-pusher d-none d-lg-block ">
+        </div>
+      </a>
+    </div>
+    
+
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="../">Rudolf Lioutikov</a>
+    </div>
+    
+
+    
+    
+    <div id="navbar-content" class="navbar-collapse main-menu-item collapse justify-content-start ">
+    <div>
+
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+
+        <li class="nav-item">
+          <a id="nav-link-home" class="nav-link " href="../" data-target="[]"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+
+        <li class="nav-item">
+          <a  class="nav-link " href="../files/lioutikov_cv.pdf" target="_blank" rel="noopener"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+
+        <li class="nav-item">
+          <a  class="nav-link  visiting " href="../research" data-target="[]"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+
+        <li class="nav-item">
+          <a  class="nav-link " href="../publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+
+        <li class="nav-item">
+          <a  class="nav-link " href="../teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+          
+        
+
+
+        <li class="nav-item">
+          <a  class="nav-link " href="../#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+
+      </div>
+      <div class="flex-break"></div>
+      <div>
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+      </ul>
+      </div>
+      
+
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        <div class="navbar-search-pusher d-none d-lg-block ">
+        </div>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="overview" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Overview</h1>
+      
+      <p>Machine learning approaches have produced impressive results across a wide spectrum of fields and applications in recent years.
+These successes have caused the expectation of an imminent deployment of intelligent autonomous robots in our everyday life.
+These expectations cannot be fulfilled by current machine learning approaches, which rely heavily on vast amounts of data, inherently overfit to the given objective and offer little to no explainability.
+In contrast, future machine learning approaches will work in close interaction with non-expert users in both general everyday situations and specialized professional tasks.
+In either scenario such intelligent agents will have to adapt to new or modified tasks without relying on the huge amounts of demonstrations that can not be provided feasibly by non-experts in either the quantity or the quality that are required by current approaches.
+Furthermore, state-of-the-art machine learning methods are not able to represent the learned models, behaviors or features in a transparent and comprehensible way resulting in processes with insufficient guarantees and additional complexity for human-machine interactions.</p>
+<p>My research tackles these challenges aims to pave the way for reliable collaborations between intelligent robots and non-expert humans.
+These challenges include, learning from demonstration and motor skill learning [<a href="../publication/lioutikovc-15">HUMANOIDS 2015</a>, <a href="../publication/lioutikovj-17">IJRR 2017</a>], comprehensible representation of learned behavior [<a href="../publication/lioutikovc-18">ICRA 2018</a>, <a href="../publication/lioutikovj-19">IJRR 2019</a>], optimal decision making and reinforcement learning [<a href="../publication/lioutikovc-14-a">ICRA 2014</a>, <a href="../publication/lioutikovj-14">JAIS 2015</a>], inverse reinforcement learning, robustness with respect to dynamic environments, transfer learning between tasks, lifelong learning of autonomous systems, explainable behavior and reasoning of intelligent agents.</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="robot_learning" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Machine Learning for Robotics</h1>
+      
+      <p>Recent advances in robotics forecast the advent of autonomous agents in our everyday life.
+Highly dynamic environments and increasingly sophisticated human-robot interactions render classical, hand-tuned controllers and preprogrammed behavior obsolete.
+Instead such systems will apply machine learning techniques to adapt to new environments and to learn new behaviors.
+I reformulated the stochastic optimal control problem as a constraint optimization and introduced a Kullback-Leibler bound on the state-action distribution, resulting in a novel policy update [<a href="../publication/lioutikovc-14-a/">ICRA 2014</a>, <a href="../publication/lioutikovj-14">JAIS 2015</a>].
+At the Intelligent Autonomous Systems group I focused my research on imitation learning and human-robot collaboration.
+In particular the goal of my thesis was the development of The Imitation Learning Pipeline, a pipeline of novel methods that learn explainable behaviors from unlabeled demonstrations represented in structures comprehensible to non-expert users.
+First, a set of demonstrations of one or multiple tasks are collected in either the Cartesian-space via motion capture or in the joint-space via kinesthetic teaching or tele-operation.</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="learning_mp_sequences" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Learning Movement Primitive Sequences from Unlabeled Demonstrations</h1>
+      
+      <p>These initially unlabeled demonstrations are segmented into sequences of movement primitives, while simultaneously learning a library of primitives.
+Movement primitives represent policies that decide for certain actions given a state.
+I developed an expectation-maximization based method entitled Probabilistic Segmentation [<a href="../publication/lioutikovc-15" >HUMANOIDS 2015</a>, <a href="../publication/lioutikovj-17" >IJRR 2017</a>], where the expectation step computes new segmentations of the demonstrations given the current model and the maximization step learns a new model given the current segmentations.
+The model is defined as a mixture of primitives.
+In my past work I chose the Probabilistic Movement Primitive representation because of its probabilistic nature and the corresponding model properties.
+However, I have also worked with other representations, such as Dynamical Movement Primitives, and have discussed how a simple probabilistic extension allows to use them in my segmentation approach.</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="explainable" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Learning Explainable Behavior from Demonstrations</h1>
+      
+      <p>The segmented demonstrations and the learned primitive library are used to induce a Probabilistic Context-Free Grammar [<a href="../publication/lioutikovc-18" >ICRA 2018</a>, <a href="../publication/lioutikovj-19" >IJRR 2019</a>].
+The grammar structure is learned using an Markov chain Monte Carlo optimization, where I introduced a novel prior based on three Poisson distributions, addressing several problems of commonly used grammar priors.
+The new prior favors intuitively structured grammars, where the three hyper-parameters of the prior have clear semantic meanings.
+The induced grammar serves as an easily comprehensible representation of the capability of a robot with respect to the primitives learned from the demonstrations.
+Furthermore, the grammar is used to generate new sequences of primitives from the library.</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="improving" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Improving Comprehensibly Structured Behavior through Reinforcement Learning</h1>
+      
+      <p>Finally, the induced grammar is improved through a reinforcement learning approach.
+Given that the grammar was induced from multiple demonstrations, it can be assumed that the learned structure was biased towards the seen demonstrations.
+However, the learned primitives and relations encoded in the grammar might be capable of solving previously unseen tasks.
+I formulated a natural policy gradient method for formal grammars. The resulting method efficiently improves the hierarchical grammar representation given an objective function.
+The method is not limited to context free grammars but can also be used for higher order grammars.
+Further learning methods can be applied in order to strengthen, weaken, create or destroy relations in order to improve the grammar even further.</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="../js/academic.min.cced88703519f6205e9ae7af47f37801.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

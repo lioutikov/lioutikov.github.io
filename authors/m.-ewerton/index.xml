@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>M. Ewerton | Rudolf Lioutikov</title>
+    <link>https://www.cs.utexas.edu/~rudi/authors/m.-ewerton/</link>
+      <atom:link href="https://www.cs.utexas.edu/~rudi/authors/m.-ewerton/index.xml" rel="self" type="application/rss+xml" />
+    <description>M. Ewerton</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cs.utexas.edu/~rudi/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png</url>
+      <title>M. Ewerton</title>
+      <link>https://www.cs.utexas.edu/~rudi/authors/m.-ewerton/</link>
+    </image>
+    
+    <item>
+      <title>Phase Estimation for Fast Action Recognition and Trajectory Generation in Human-Robot Collaboration</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedaj-17-b/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedaj-17-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Movement Primitives for Coordination of Multiple Human-Robot Collaborative Tasks</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedaj-17-a/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedaj-17-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anticipative Interaction Primitives for Human-Robot Collaboration</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedac-16/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedac-16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proactive Human-Robot Collaboration with Interaction Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedaw-16/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedaw-16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Probabilistic Framework for Semi-Autonomous Robots Based on Interaction Primitives with Phase Estimation</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedac-15/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedac-15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Multiple Collaborative Tasks with a Mixture of Interaction Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/ewertonc-15/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/ewertonc-15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Interaction for Collaborative Tasks with Probabilistic Movement Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedac-14/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedac-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling Spatio-Temporal Variability in Human-Robot Interaction with Probabilistic Movement Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/ewertonw-14/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/ewertonw-14/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

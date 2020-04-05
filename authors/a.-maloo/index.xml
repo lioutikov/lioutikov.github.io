@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A. Maloo | Rudolf Lioutikov</title>
+    <link>https://www.cs.utexas.edu/~rudi/authors/a.-maloo/</link>
+      <atom:link href="https://www.cs.utexas.edu/~rudi/authors/a.-maloo/index.xml" rel="self" type="application/rss+xml" />
+    <description>A. Maloo</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cs.utexas.edu/~rudi/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png</url>
+      <title>A. Maloo</title>
+      <link>https://www.cs.utexas.edu/~rudi/authors/a.-maloo/</link>
+    </image>
+    
+    <item>
+      <title>Anticipative Interaction Primitives for Human-Robot Collaboration</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedac-16/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedac-16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proactive Human-Robot Collaboration with Interaction Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedaw-16/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedaw-16/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

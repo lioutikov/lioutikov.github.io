@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>E. Rueckert | Rudolf Lioutikov</title>
+    <link>https://www.cs.utexas.edu/~rudi/authors/e.-rueckert/</link>
+      <atom:link href="https://www.cs.utexas.edu/~rudi/authors/e.-rueckert/index.xml" rel="self" type="application/rss+xml" />
+    <description>E. Rueckert</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cs.utexas.edu/~rudi/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png</url>
+      <title>E. Rueckert</title>
+      <link>https://www.cs.utexas.edu/~rudi/authors/e.-rueckert/</link>
+    </image>
+    
+    <item>
+      <title>Low-cost Sensor Glove with Force Feedback for Learning from Demonstrations using Probabilistic Trajectory Representations</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/rueckertw-15/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/rueckertw-15/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

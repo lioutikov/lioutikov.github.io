@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>CS309: Robot Learning from Demonstration and Interaction</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link href="./default.css" rel="stylesheet" type="text/css" media="all">
+
+
+</head>
+<body>
+
+
+<div id="wrapper" class="container">
+<div id="page">
+	<div id="classpage">
+
+
+	    <h1 align="center">CS309: Robot Learning from Demonstration and Interaction</h1>
+	    <br>
+
+		<div id="classtitle"> <h2> Course Info </h2> </div>
+		<div id="classblock">
+			<b> Semester: </b>Spring 2019<br>
+			<b> Time: </b>12:00 - 13:30 Tue / Thu<br>
+			<b> Location: </b>WEL 2.128<br>
+			<b> Website: </b> <a href="/archive/fri_rl_spring19/">/archive/fri_rl_spring19/</a> <br><br>
+			<br>
+			<br>
+			<br>
+
+			<table class="tamentors">
+			<thead>
+			<tr>
+				<td>&nbsp;</td>
+			  <td><b>Instructor</b></td>
+				<td>&nbsp;</td>
+			  <td><b>Teaching Assistant</b></td>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>&nbsp;</td>
+			  <td><a target="_blank" href="http://www.cs.utexas.edu/~rudi/" rel="self">Rudolf Lioutikov</a></td>
+				<td>&nbsp;</td>
+			  <td>Chia-Wen Cheng</td>
+			</tr>
+			<tr>
+				<td><b>Email:</b></td>
+				<td><span id="e136938940">[javascript protected email address]</span><script type="text/javascript">/*<![CDATA[*/eval("var a=\"Cyzio+Bx@k6P.gdr3qU7c9MpQjJ8-tDHKF50Yfm4WZnbOsEu1whRILaTGAXlvVSNe2_\";var b=a.split(\"\").sort().join(\"\");var c=\"IwTVvwRTSgVvseZlzsOV\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e136938940\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"")/*]]>*/</script></td>
+				<td>&nbsp;</td>
+			  <td><span id="e269500899">[javascript protected email address]</span><script type="text/javascript">/*<![CDATA[*/eval("var a=\"Ugc8tVzR6IfdyNPMKbmCxTDZQ_a3pH+riS-XenFYkGo@0qOLEBuhs5.1lJWjvw924A7\";var b=a.split(\"\").sort().join(\"\");var c=\"@2@Eq.LN@jcwvq4Gjcq0w\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e269500899\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"")/*]]>*/</script></td>
+			</tr>
+			<tr>
+				<td><b>Office Hours:</b></td>
+			  <td>Fr 11:15-12:15 (GDC 3.430)<br>or by appointment</td>
+				<td>&nbsp;</td>
+			  <td>Th 17:00-18:00<br/>GDC 1.302 Tutorial Lobby</td>
+			</tr>
+			</tbody>
+			</table>
+
+			<br>
+			<br>
+			<br>
+
+			<table class="tamentors">
+			<thead>
+			<tr>
+				<td>&nbsp;</td>
+			  <td colspan="4" align="center"><b>Mentors</b></td>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>&nbsp;</td>
+				<td>Cameron Wolfe</td>
+				<td>Christian Sweet</td>
+			  	<td>Kamil Ali</td>
+				<td>Vikram Idury</td>
+			</tr>
+			<tr>
+				<td><b>Email:</b></td>
+			  	<td><span id="e930712562">[javascript protected email address]</span><script type="text/javascript">/*<![CDATA[*/eval("var a=\"jnC18ZQdJN_K.Wq-DHAvEsu7TMPcU+aBYiw5hmzbxR23fItoelOp9@gSG6LVrXF4k0y\";var b=a.split(\"\").sort().join(\"\");var c=\"4S9tIC3R@ILSgWXrIkRVCIfX\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e930712562\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"")/*]]>*/</script></td>
+				<td><span id="e922861903">[javascript protected email address]</span><script type="text/javascript">/*<![CDATA[*/eval("var a=\"SyxoEUtVlZKzrpheGu.m7MbTs2fFDqQwOgX5NvPWH-dIBCR81a9A0nc+kYL64J3j@_i\";var b=a.split(\"\").sort().join(\"\");var c=\"I6jCC4pJ4C@-6xCBJ\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e922861903\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"")/*]]>*/</script></td>
+				<td><span id="e113704059">[javascript protected email address]</span><script type="text/javascript">/*<![CDATA[*/eval("var a=\"qpT6Wi@CRN92XSK31r4nMoQOw0-yukjhg+dv85IzYbHFLUADVJfaG_BmxPeZEt7.slc\";var b=a.split(\"\").sort().join(\"\");var c=\"ab_JGTbGJStEUsbZTULt\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e113704059\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"")/*]]>*/</script></td>
+				<td><span id="e406170261">[javascript protected email address]</span><script type="text/javascript">/*<![CDATA[*/eval("var a=\"ulBLD32ySXfcM0rpUR_nw71bVqz-.ZHFdtkQNv6moIisA9YJ+Kg8jhEW4a@eCPT5xOG\";var b=a.split(\"\").sort().join(\"\");var c=\"TK8@IhKAP@O0PC9xIeB9AP\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e406170261\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"")/*]]>*/</script></td>
+			</tr>
+			<tr>
+				<td><b>Office Hours:</b></td>
+				<td>Fr 12:00-13:30<br/>GDC 1.302 Tutorial Lobby</td>
+				<td>Mo 12:00-13:30<br/>GDC 1.302 Tutorial Lobby</td>
+				<td>Tu 15:30-17:00<br/>GDC 1.302 Tutorial Lobby</td>
+				<td>We 14:00-15:30<br/>GDC 1.302 Tutorial Lobby</td>
+			</tr>
+			</tbody>
+			</table>
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<b> Piazza: </b> <a target="_blank" href="http://piazza.com/utexas/spring2019/50670">http://piazza.com/utexas/spring2019/50670</a>
+		</div>
+
+		<div id="classtitle"> <h2> Course Description </h2> </div>
+		<div id="classblock">
+			<p>Currently, most robots are programmed meticulously by robotics experts in a controlled laboratory setting—a model that is obviously not scalable to large-scale deployment.  Robot learning from demonstration has emerged as an alternative paradigm for teaching robots new tasks by simply showing them what to do, rather than by writing code.  Thus, learning from demonstration research tries to answer the question: “How can robots learn to interpret and generalize human demonstrations?”  Solving this core research problem will enable the next generation of personal robots to revolutionize the home and workplace in coming years. <br>
+			<br>
+			This research stream will place students at the cutting-edge of robot learning from demonstration research, working with robots to perform complex manipulation tasks, such as autonomously building IKEA furniture.   Students will be given instruction in three core areas of robotics: manipulation, perception, and human-robot interaction.  Additionally, students will learn and practice programming skills via hands-on mini-projects in each of these areas. After these key competencies have been acquired, students will devise and implement research projects in the area of learning from demonstration.</p>
+
+			<p><b>Organization</b>
+			Class sessions will be held in WEL 2.128 on Tuesdays and Thursdays from 12:00 to 13:30 if not announced otherwise. Attendance is mandatory. Students are expected to email the instructor in advance to inform of any potential absences.
+			</p>
+
+			<p> <b>Readings: </b>
+			There is no textbook for this course. There will be a series of 4 readings assignments corresponding to different sections of the <a target="_blank" href="http://users.eecs.northwestern.edu/~argall/docs/09ras_argall.pdf">2009 learning from demonstration survey paper</a> by Argall et al.
+			</p>
+
+			<p> <b>Prerequisites: </b> None, except some intrinsic motivation and a healthy thirst for knowledge.</p>
+
+			<p> <b>Language: </b> Course programming assignments will be in Python 3. We do not assume that students have previous experience with the language, but we do expect you to learn the basics very rapidly. Homework 1 is designed to teach you the basics of Python 3 if you are not already familiar.</p>
+		</div>
+
+		<div id="classtitle"> <h2> Coursework </h2> </div>
+		<div id="classblock">
+			<p> There are four types of assignments that you will be expected to complete: <br><br>
+
+			<b>1. Reading assignments:</b> These will cover different section of the <a target="_blank" href="http://users.eecs.northwestern.edu/~argall/docs/09ras_argall.pdf">survey paper</a>.<br>
+			<b>All reading assignments should be completed before the class period for which they are assigned</b>.  <br><br>
+
+			<b>2. Homework exercises:</b> Throughout the semester, problem sets will be assigned and graded.
+			The goal of these problems is to get you comfortable with the material and prepared for the final.<br><br>
+
+			<b>3. Tutorials:</b> Every last lecture of the month will be held in the FRI lab in GDC 5.710A and GDC 5.816. This lectures will require hand on work with the two <a target="_blank" href="https://www.rethinkrobotics.com/sawyer/">collaborative robots</a>. You will demonstrate and solve given tasks with the robot but also define and present your own tasks to your peers.<br><br>
+
+			<b>4. Data Collection:</b> You will be required to demonstrate certain tasks several times to the robots. This will help you to develop a feeling for the capabilitites of the robots as well as improve your robot interaction and teaching skills. After a mandatory minimal number of demonstrations you can earn a bonus on your grade by providing additional demonstrations.
+
+			</p>
+		</div>
+
+
+<div id="classtitle"> <h2> Planned Lecture Schedule </h2> </div>
+(Subject to change due to pace of class, see website for updates)
+<table id="syllabus">
+<thead>
+<tr>
+  <td class="day"><b>Day</b></td>
+  <td class="topic"><b>Topic</b></td>
+  <td class="reading"><b>Readings</b></td>
+  <td class="assignment"><b>Assignments</b></td>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="day">&nbsp</td>
+  <td class="topic">Install Conda & Jupyter Notebook</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="day">Tue 01/22</td>
+  <td class="topic">Motivation, Organization</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="day">Thu 01/24</td>
+  <td class="topic">Python: general &nbsp; &nbsp; Python: solutions</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="4"><hr></td>
+</tr>
+
+<tr>
+  <td class="day">Tue 01/29</td>
+  <td class="topic">Python: continued</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr style="background-color:#CFE2F3;">
+  <td class="day">Thu 01/31</td>
+  <td class="topic">Tutorial: Introduction to the Sawyers and the initial task</td>
+  <td class="reading">&nbsp;</td>
+  <td>&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="4"><hr></td>
+</tr>
+
+<tr>
+  <td class="day">Tue 02/05</td>
+  <td class="topic">Robotics: basics, position, orientation, transformation</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="day">Thu 02/07</td>
+  <td class="topic">SCARA</td>
+  <td class="topic">Robotics: fk, ik, singularities, dynamics</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="4"><hr></td>
+</tr>
+
+<tr>
+  <td class="day">Tue 02/12</td>
+  <td class="topic">Teaching Types: Kinesthetic, Tele-Operation, Observation<br>Designing (Collaborative) Tasks: goals, requirements, challenges</td>
+  <td class="reading">1. Introduction<br>2. Design choices</td>
+  <td class="assignment" rowspan="8">Homework 1:<br>Python,<br>Robotics</td>
+</tr>
+
+<tr>
+  <td class="day">Thu 02/14</td>
+  <td class="topic">Trajectory Representation</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="3"><hr></td>
+</tr>
+
+<tr style="background-color:#D9EAD3;">
+  <td class="day">Tue 02/19</td>
+  <td class="topic">Homework in Lecture</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="day">Thu 02/21</td>
+  <td class="topic">Classification: FLD, Perceptron, SVM </td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="3"><hr></td>
+</tr>
+
+<tr>
+  <td class="day">Tue 02/26</td>
+  <td class="topic">Classification: FLD, Perceptron, SVM </td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr style="background-color:#CFE2F3;">
+  <td class="day">Thu 02/28</td>
+  <td class="topic">Tutorial: Students present solutions for the first task</td>
+  <td class="reading"> 3. Gathering examples:<br>How the dataset is built</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="4"><hr></td>
+</tr>
+
+<tr>
+  <td class="day">Tue 03/05</td>
+  <td class="topic">Regression: OLS, Ridge</td>
+  <td class="reading">&nbsp;</td>
+  <td class="assignment" rowspan="8">Homework 2:<br>Classification,<br>Regression</td>
+</tr>
+
+<tr>
+  <td class="day">Thu 03/07</td>
+  <td class="topic">Regression: OLS, Ridge</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="3"><hr></td>
+</tr>
+
+<tr style="background-color:#D9EAD3;">
+  <td class="day">Tue 03/12</td>
+  <td class="topic">Homework in Lecture</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="day">Thu 03/14</td>
+  <td class="topic">Clustering: KDE, KNN, Mean-Shift, K-means</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="3"><hr></td>
+</tr>
+
+<tr>
+  <td class="day">Tue 03/26</td>
+  <td class="topic">Clustering: KDE, KNN, Mean-Shift, K-means</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr style="background-color:#CFE2F3;">
+  <td class="day">Thu 03/28</td>
+  <td class="topic">Tutorial: Students introduce final task</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="4"><hr></td>
+</tr>
+
+<tr>
+  <td class="day">Tue 04/02</td>
+  <td class="topic">Evaluation: Model Selection, Cross Validation</td>
+  <td class="reading">&nbsp;</td>
+  <td class="assignment" rowspan="8">Homework 3:<br>Clustering,<br>Evaluation,<br>Reinforcement Learning</td>
+</tr>
+
+<tr>
+  <td class="day">Thu 04/04</td>
+  <td class="topic">Reinforcement Learning: MDP, Features</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="3"><hr></td>
+</tr>
+
+<tr>
+  <td class="day">Tue 04/09</td>
+  <td class="topic">Reinforcement Learning: Bellman Optimality, Exploration vs Exploitation</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr style="background-color:#D9EAD3;">
+  <td class="day">Thu 04/11</td>
+  <td class="topic">Homework in Lecture</td>
+  <td class="reading">4. Deriving a policy:<br>The source of the<br>state to action mapping</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="3"><hr></td>
+</tr>
+
+<tr>
+  <td class="day">Tue 04/16</td>
+  <td class="topic">Imitation Learning: Movement Primitives</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="day">Thu 04/18</td>
+  <td class="topic">Imitation Learning: Movement Primitives</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="4"><hr></td>
+</tr>
+
+<tr>
+  <td class="day">Tue 04/23</td>
+  <td class="topic">Imitation Learning: Behavioral Cloning</td>
+  <td class="reading">&nbsp;</td>
+  <td class="assignment" rowspan="5">Homework 4:<br>Imitation Learning,<br>ROS</td>
+</tr>
+
+<tr  style="background-color:#D9EAD3;">
+  <td class="day">Thu 04/25</td>
+  <td class="topic">Homework in Lecture</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="3"><hr></td>
+</tr>
+
+<tr style="background-color:#CFE2F3;">
+  <td class="day">Tue 04/30</td>
+  <td class="topic">Tutorial: Students present solutions for final task</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="day">Thu 05/02</td>
+  <td class="topic">ROS: general, messages, pub-sub, rosbag</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="4"><hr></td>
+</tr>
+
+<tr>
+  <td class="day">Tue 05/07</td>
+  <td class="topic">ROS: services, tf2</td>
+  <td class="reading">&nbsp;</td>
+	<td class="assignment" rowspan="4" style="color:red;">Final Project</td>
+</tr>
+
+<tr>
+  <td class="day">Thu 05/09</td>
+  <td class="topic">Inverse Reinforcement Learning</td>
+  <td class="reading">5. Limitations of the<br>demonstration dataset<br>6. Future directions<br>7. Conclusion</td>
+</tr>
+
+<tr>
+  <td class="week_separator" colspan="3"><hr></td>
+</tr>
+
+<tr>
+  <td class="day important" style="color: red;">Tue 05/21<br>(subject to change)</td>
+  <td class="topic important" style="color:red;">Final Project Presentations</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+The <span style="background-color:#D9EAD3;">"Homework in Lecture"</span> lectures will give you the opportunity to ask question about the current homework assignment and discuss it with your peers. Furthermore, these lectures will also be used as buffer lectures in case we fall behind schedule.
+<br>
+<br>
+<br>
+
+		<div id="classtitle"> <h2> Grading </h2> </div>
+		<div id="classblock">
+		<p>Homework assignments are due by the time the corresponding lecture begins.<br>
+			For example, Homework 1 will be published Tue 02/12 12:00 and is due Thu 02/28 12:00.</p>
+    <p><b>Overall grades</b> will be determined from:</p>
+    <ul>
+      <li>Homework Exercises: 40%</li>
+			<li>Tutorials: 20%</li>
+			<li>Data Collection: 20%</li>
+			<li>Final Project: 20%</li>
+    </ul>
+    <p> Grades will be assigned using both plus and minus grades.</p>
+		</div>
+
+		<div id="classtitle"> <h2> Academic honesty policy </h2> </div>
+		<div id="classblock">
+			<p>
+			You are encouraged to discuss the readings and concepts with classmates, but all written work must be your own. Programming assignments must be your own, except for 2-person teams when teams are authorized.
+		    You may <b>NOT</b> look online for existing implementations of
+			algorithms related to the programming assignments, even as a reference.
+			Your code will be analyzed by automatic tools that detect plagiarism to ensure that it is original.
+			</p>
+			<p>
+			<b>Students caught cheating will automatically fail the course and will be reported to the university.</b>
+			If in doubt about the ethics of any particular action, look at the <a href="http://www.cs.utexas.edu/users/ear/CodeOfConduct.html#honesty">departmental
+			guidelines</a> and/or ask—ignorance of the rules will not shield you from potential consequences.
+			</p>
+		</div>
+
+
+		<div id="classtitle"> <h2> Notice about students with disabilities </h2> </div>
+		<div id="classblock">
+			<p>
+			The University of Texas at Austin provides upon request appropriate
+			academic accommodations for qualified students with disabilities.
+			For more information, contact the Division of Diversity and Community Engagement — Services for Students with Disabilities at
+			512-471-6529; 512-471-4641 TTY.
+			</p>
+		</div>
+
+
+		<div id="classtitle"> <h2> Notice about missed work due to religious holy days </h2> </div>
+		<div id="classblock">
+			<p>
+			A student who misses an examination, work assignment, or other project
+			due to the observance of a religious holy day will be given an
+			opportunity to complete the work missed within a reasonable time after
+			the absence, provided that he or she has properly notified the
+			instructor.  It is the policy of the University of Texas at Austin
+			that the student must notify the instructor at least fourteen days
+			prior to the classes scheduled on dates he or she will be absent to
+			observe a religious holy day.  For religious holy days that fall
+			within the first two weeks of the semester, the notice should be given
+			on the first day of the semester.  The student will not be penalized
+			for these excused absences, but the instructor may appropriately
+			respond if the student fails to complete satisfactorily the missed
+			assignment or examination within a reasonable time after the excused
+			absence.
+			</p>
+	</div>
+</div>
+</div>
+
+
+
+
+</div>
+</body></html>

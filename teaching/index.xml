@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teaching | Rudolf Lioutikov</title>
+    <link>https://www.cs.utexas.edu/~rudi/teaching/</link>
+      <atom:link href="https://www.cs.utexas.edu/~rudi/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <description>Teaching</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cs.utexas.edu/~rudi/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png</url>
+      <title>Teaching</title>
+      <link>https://www.cs.utexas.edu/~rudi/teaching/</link>
+    </image>
+    
+    <item>
+      <title>Robot Learning from Demonstration and Interaction (CS309)</title>
+      <link>https://www.cs.utexas.edu/~rudi/teaching/fri_rl_spring20/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/teaching/fri_rl_spring20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robot Learning from Demonstration and Interaction (CS378)</title>
+      <link>https://www.cs.utexas.edu/~rudi/teaching/fri_rl_fall19/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/teaching/fri_rl_fall19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FRI Summer Fellowship: Robot Learning</title>
+      <link>https://www.cs.utexas.edu/~rudi/teaching/fri_rl_summer19/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/teaching/fri_rl_summer19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robot Learning from Demonstration and Interaction (CS309)</title>
+      <link>https://www.cs.utexas.edu/~rudi/teaching/fri_rl_spring19/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/teaching/fri_rl_spring19/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

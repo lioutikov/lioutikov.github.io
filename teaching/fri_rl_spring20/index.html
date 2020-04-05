@@ -1,0 +1,2201 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Rudolf Lioutikov">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://www.cs.utexas.edu/~rudi/teaching/fri_rl_spring20/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="../../css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="../../index.webmanifest">
+  <link rel="icon" type="image/png" href="../../images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="../../images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://www.cs.utexas.edu/~rudi/teaching/fri_rl_spring20/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Rudolf Lioutikov">
+  <meta property="og:url" content="https://www.cs.utexas.edu/~rudi/teaching/fri_rl_spring20/">
+  <meta property="og:title" content="Robot Learning from Demonstration and Interaction (CS309) | Rudolf Lioutikov">
+  <meta property="og:description" content=""><meta property="og:image" content="https://www.cs.utexas.edu/~rudi/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://www.cs.utexas.edu/~rudi/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-01-01T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-01-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Robot Learning from Demonstration and Interaction (CS309) | Rudolf Lioutikov</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+    
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar  has_sub_menu " id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="../../">Rudolf Lioutikov<div class="navbar-brand-pusher d-none d-lg-block  has_sub_menu ">
+        </div>
+      </a>
+    </div>
+    
+
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="../../">Rudolf Lioutikov</a>
+    </div>
+    
+
+    
+    
+    <div id="navbar-content" class="navbar-collapse main-menu-item collapse justify-content-start  has_sub_menu ">
+    <div>
+
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+
+        <li class="nav-item">
+          <a id="nav-link-home" class="nav-link " href="../../" data-target="[]"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+
+        <li class="nav-item">
+          <a  class="nav-link " href="../../files/lioutikov_cv.pdf" target="_blank" rel="noopener"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+
+        <li class="nav-item">
+          <a  class="nav-link " href="../../research"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+
+        <li class="nav-item">
+          <a  class="nav-link " href="../../publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+
+        <li class="nav-item">
+          <a  class="nav-link  visiting " href="../../teaching" data-target="[]"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+          
+        
+
+
+        <li class="nav-item">
+          <a  class="nav-link " href="../../#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+
+      </div>
+      <div class="flex-break"></div>
+      <div>
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+          
+          
+          
+            
+          
+          
+        
+
+
+
+        <li class="nav-item">
+          <a class="nav-link " href="#info"><span>Overview</span></a>
+        </li>
+
+        
+        
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+          
+          
+          
+            
+          
+          
+        
+
+
+
+        <li class="nav-item">
+          <a class="nav-link " href="#description"><span>Description</span></a>
+        </li>
+
+        
+        
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+          
+          
+          
+            
+          
+          
+        
+
+
+
+        <li class="nav-item">
+          <a class="nav-link " href="#coursework"><span>Coursework</span></a>
+        </li>
+
+        
+        
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+          
+          
+          
+            
+          
+          
+        
+
+
+
+        <li class="nav-item">
+          <a class="nav-link " href="#grading"><span>Grading</span></a>
+        </li>
+
+        
+        
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+          
+          
+          
+            
+          
+          
+        
+
+
+
+        <li class="nav-item">
+          <a class="nav-link " href="#schedule"><span>Schedule</span></a>
+        </li>
+
+        
+        
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+          
+          
+          
+            
+          
+          
+        
+
+
+
+        <li class="nav-item">
+          <a class="nav-link " href="#office_hours"><span>Office Hours</span></a>
+        </li>
+
+        
+        
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+          
+          
+          
+            
+          
+          
+        
+
+
+
+        <li class="nav-item">
+          <a class="nav-link " href="#academic_honesty"><span>Policies & Notices</span></a>
+        </li>
+
+        
+        
+
+      </ul>
+      </div>
+      
+
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        <div class="navbar-search-pusher d-none d-lg-block  has_sub_menu ">
+        </div>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="covid_notice" class="home-section wg-hero dark  " style="background-image: linear-gradient(#4bb4e3, #2b94c3);" >
+    <div class="container">
+      
+
+
+
+
+
+    <h1 class="hero-title">
+      Online Lecture Modifications
+    </h1>
+
+    
+    <div class="hero-lead"><p><strong>The lecture will be taught in an online-format for the remainder of the semester.</strong></p>
+<p>Lectures will be held in a <a href="https://www.zoom.us" target="_blank">zoom</a> meeting during the usual lecture times Tue/Thu 15:30 - 17:00 CST.</p>
+<p>The lectures will be recorded and made available to you.</p>
+<p><strong>Class recordings are reserved only for the use of members of this class (students, TAs, and the instructor) and only for educational purposes. Recordings should not be shared outside the class in any form. Violation of this restriction could lead to Student Misconduct proceedings.</strong></p>
+<p>More changes and adaptation regarding data collection and simulation environments will be discussed and announced in the first meeting (Tue. 03/31/2020).</p>
+</div>
+    
+
+    
+    
+
+    
+    
+
+  
+  
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="info" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Robot Learning from Demonstration and Interaction (CS309)</h1>
+      
+      <div class="row">
+  <div class="col-12 col-lg-4">
+	<div class="contact-widget">
+	<ul class="fa-ul">
+		<li>
+			<i class="fa-li fas fa-calendar-alt fa-2x"  aria-hidden="true"></i>
+			<span><b>semester</b></br>spring 2020</span>
+		</li>
+		<li>
+			<i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+			<span><b>time</b><br>tue 15:30-17:00</br>thu 15:30-17:00</span>
+		</li>
+		<li>
+			<i class="fa-li fas fa-chalkboard fa-2x" aria-hidden="true"></i>
+			<span><b>lecture room</b><br><a href="https://utdirect.utexas.edu/apps/campus/buildings/nlogon/facilities/UTM/PAR/" target="_blank">PAR 208</a></span>
+		</li>
+		<li>
+			<i class="fa-li fas fa-robot fa-2x" aria-hidden="true"></i>
+			<span><b>lab</b><br><a href="https://utdirect.utexas.edu/apps/campus/buildings/nlogon/facilities/UTM/GDC/" target="_blank">GDC 5.710A</a></span>
+		</li>
+	  </ul>
+	</div>
+  </div>
+  <div class="col-12 col-lg-4">
+	<div class="contact-widget">
+	<ul class="fa-ul">
+		<li>
+			<i class="fa-li fas fa-chalkboard-teacher fa-2x" aria-hidden="true"></i>
+			<span><b>instructor</b><br><a href="../../">Rudolf Lioutikov</a></span>
+		</li>
+		<li>
+	    <i class="fa-li fas fa-envelope big-icon"></i>
+			<span><b>e-mail</b><br><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="vokituoil" data-domain="ude.saxetu"></span>&#32;
+<script id="3d5b6d4f9b5cfc1c64bb6fadeeb5c8b5">
+  var scriptTag = document.getElementById("3d5b6d4f9b5cfc1c64bb6fadeeb5c8b5");
+  var link = document.createElement("a");
+  var address = "vokituoil".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = address;
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</span>
+	  </li>
+	</ul>
+	</div>
+  </div>
+	<div class="col-12 col-lg-4">
+	<div class="contact-widget">
+	<ul class="fa-ul">
+		<li>
+	    <i class="fa-li ai ai-piazza big-icon"></i>
+			<span><b>pizza</b><br><a href="http://piazza.com/utexas/spring2020/50230" target="_blank">50230</a></span>
+	  </li>
+		<li>
+	    <i class="fa-li fab fa-github big-icon"></i>
+			<span><b>github</b><br><a href="https://github.com/fri-robotlearning-spring2020" target="_blank">fri-robotlearning-spring2020</a></span>
+	  </li>
+	  <li>
+			<i class="fa-li fab fa-github big-icon" style="font-size: 1.8rem; left:-2.64rem;"></i>
+			<i class="fa-li fas fa-chalkboard" style="color:#ffffff; font-size: 1.2rem; top:1.2rem; left:-3.05rem;"></i>
+			<i class="fa-li fas fa-chalkboard" style="font-size: 1.1rem; top:1.44rem; left:-3.14rem;"></i>
+			<span><b>github classroom</b><br><a href="https://classroom.github.com/classrooms/59712250-fri-robotlearning-spring2020" target="_blank">fri-robotlearning-spring2020</a></span>
+	  </li>
+		<!-- <li>
+	    <i class="fa-li fab fa-github big-icon" style="font-size: 1.8rem; left:-2.64rem;"></i>
+			<i class="fa-li fas fa-robot" style="color:#ffffff; font-size: 1.2rem; top:1.2rem; left:-3.05rem;"></i>
+			<i class="fa-li fas fa-robot" style="font-size: 1.1rem; top:1.44rem; left:-3.14rem;"></i>
+			<span><b>github lab</b><br><a href="" target="_blank"></a></span>
+	  </li> -->
+	  <li>
+			<img src="../../img/canvas.png" width="42px" style="position: absolute; left:-3.14rem; top:1.14rem;"/>
+	    <i class="fa-li fab fa-canvas big-icon"></i>
+			<span><b>ut canvas</b><br><a href="https://utexas.instructure.com/courses/1275594" target="_blank">Robot Learning FRI</a></span>
+	  </li>
+	</ul>
+	</div>
+  </div>
+</div>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="description" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Course Description</h1>
+      
+      <p>Currently, most robots are programmed meticulously by robotics experts in a controlled laboratory setting—a model that is obviously not scalable to large-scale deployment.
+Robot learning from demonstration has emerged as an alternative paradigm for teaching robots new tasks by simply showing them what to do, rather than by writing code.
+Thus, learning from demonstration research tries to answer the question: <b>“How can robots learn to interpret and generalize human demonstrations?”</b>
+Solving this core research problem will enable the next generation of personal robots to revolutionize the home and workplace in coming years.
+<br></p>
+<p>This research stream will place students at the cutting-edge of robot learning from demonstration research, working with robots to perform complex manipulation tasks, such as autonomously building IKEA furniture.
+Students will be given instruction in three core areas of robotics: manipulation, perception, and human-robot interaction. Additionally, students will learn and practice programming skills via hands-on mini-projects in each of these areas.
+After these key competencies have been acquired, students will devise and implement research projects in the area of learning from demonstration.</p>
+<h2>Organization</h2>
+Class sessions will be held in PAR 208 on Tuesdays and Thursdays from 15:30 to 17:00 if not announced otherwise.
+Attendance is mandatory.
+Students are expected to email the instructor in advance to inform of any potential absences.
+<h2>Prerequisites</h2>
+None, except some intrinsic motivation and a healthy thirst for knowledge.
+<h2>Programming Language</h2>
+Course programming assignments will be in Python 3. We do not assume that students have previous experience with the language, but the students are expected to learn the basics very rapidly.
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="coursework" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Coursework</h1>
+      
+      <p>There are six types of assignments that the students are expected to complete.</p>
+<h2>Homework Exercises</h2>
+Throughout the semester, problem sets will be assigned and graded.
+The goal of these problems is to get the students comfortable with the material and prepared for the final project.
+<h2>Lecture Notes</h2>
+Students will be randomly selected to present a summary of the last two lectures at the next lecture.
+<h2>Tutorials</h2>
+Tutorials will be held in the FRI lab in GDC 5.710A.
+This lectures will require hand on work with the two <a href="https://www.rethinkrobotics.com/sawyer/" target="_blank">collaborative robots</a>.
+The students will demonstrate and solve given tasks with the robot but also define and present your own tasks to your peers.
+<h2>Data Collection</h2>
+The students will be required to demonstrate certain tasks several times to the robots.
+This will help them to develop an understanding of the capabilities of the robots as well as improve your robot interaction and teaching skills.
+<h2>Final Project</h2>
+In the final project the students apply learned methods on a robot learning task performed on a collaborative robot platform. The students report their acquired knowledge in a short research paper as well as a short project presentation.
+<h2>Reading Assignments</h2>
+In addition, the students are expected to read through literature related to the course and the final project.
+In particular, there will be 4 nongraded reading assignments corresponding to different sections of <a href="http://users.eecs.northwestern.edu/~argall/docs/09ras_argall.pdf" target="_blank">learning from demonstration survey by Argall et al.</a>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="grading" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Grading</h1>
+      
+      <p>The <b>overall grade</b> will consist of five of the coursework assignments.
+<img src="../../img/grading.png" />
+Grades will be assigned using both plus and minus grades.</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="schedule" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Lecture Schedule</h1>
+      
+      <p>The schedule is subject to change due to pace of class, see website for updates.</p>
+<table class="schedule">
+<tr>
+  <th class="day"><b>Day</b></th>
+  <th class="topic"><b>Topic</b></th>
+  <th class="reading"><b>Readings</b></th>
+  <th class="assignment"><b>Assignments</b></th>
+</tr>
+<tr>
+  <td class="day">Tue 01/21</td>
+  <td class="topic">Motivation, Organization</td>
+  <td class="reading">&nbsp;</td>
+  <td class="assignment" rowspan="4">Homework 0:<br>Python,<br>Conda,<br>Jupyter</td>
+</tr>
+<tr>
+  <td class="day">Thu 01/23</td>
+  <td class="topic">Linear Algebra Refresher</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Tue 01/28</td>
+  <td class="topic">Regression: OLS, Ridge Regression </td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Thu 01/30</td>
+  <td class="topic">Regression: Lasso, Elastic Nets </td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Tue 02/04</td>
+  <td class="topic">Regression: Features, Polynomial Regression </td>
+  <td class="reading">&nbsp;</td>
+  <td class="assignment">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Tue 02/06</td>
+  <td class="topic">Robotics: basics, position, orientation</td>
+  <td class="reading">&nbsp;</td>
+  <td class="assignment">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Tue 02/011</td>
+  <td class="topic">Robotics: homogeneous transformation, ROS basics</td>
+  <td class="reading">&nbsp;</td>
+  <td class="assignment">&nbsp;</td>
+</tr>
+<tr class="tutorial">
+  <td class="day">Thu 02/13</td>
+  <td class="topic">Tutorial: Introduction to the Sawyers and the initial task</td>
+  <td class="reading">&nbsp;</td>
+  <td class="assignment" rowspan="5">Homework 1:<br> Regression,<br>ROS</td>
+</tr>
+<tr>
+  <td class="day">Tue 02/18</td>
+  <td class="topic">Robotics: Inverse Kinematics, Singularities, Dynamics</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Thu 02/20</td>
+  <td class="topic">Teaching Types: Kinesthetic, Tele-Operation, Observation<br>Designing (Collaborative) Tasks: goals, requirements, challenges</td>
+  <td class="reading">1. Introduction<br>2. Design choices</td>
+</tr>
+<tr>
+  <td class="day">Tue 02/25</td>
+  <td class="topic">Trajectory Representation</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Thu 02/27</td>
+  <td class="topic">Classification: FLD, Perceptron</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Tue 03/03</td>
+  <td class="topic">Classification: SVM </td>
+  <td class="reading">&nbsp;</td>
+  <td class="assignment" rowspan="6">Homework 2:<br>Classification<br>Clustering<br>Model Evaluation</td>
+</tr>
+<tr class="tutorial">
+  <td class="day">Thu 03/05</td>
+  <td class="topic">Tutorial: Students present solutions for the first task</td>
+  <td class="reading"> 3. Gathering examples:<br>How the dataset is built</td>
+</tr>
+<tr>
+  <td class="day">Thu 03/10</td>
+  <td class="topic">Clustering: KDE, KNN</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Tue 03/12</td>
+  <td class="topic">Clustering: Mean-Shift, K-means</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Tue 03/24</td>
+  <td class="topic">Evaluation: Model Selection, Cross Validation</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Thu 03/26</td>
+  <td class="topic">Reinforcement Learning: MDP, Features</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Tue 03/31</td>
+  <td class="topic">Introduction: Pytorch</td>
+  <td class="reading">&nbsp;</td>
+  <td class="assignment" rowspan="7">Homework 3:<br>Reinforcement Learning,<br>Imitation Learning </td>
+</tr>
+<tr class="tutorial">
+  <td class="day">Thu 04/02</td>
+  <td class="topic">Tutorial: Students introduce final task</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Tue 04/07</td>
+  <td class="topic">Reinforcement Learning: Bellman Optimality, Exploration vs Exploitation</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+Inverse Reinforcement Learning
+<tr>
+  <td class="day">Thu 04/09</td>
+  <td class="topic">Imitation Learning: Behavioral Cloning</td>
+  <td class="reading">4. Deriving a policy:<br>The source of the<br>state to action mapping</td>
+</tr>
+<tr>
+  <td class="day">Tue 04/14</td>
+  <td class="topic">Imitation Learning: Inverse Reinforcement Learning</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Thu 04/16</td>
+  <td class="topic">Imitation Learning: Inverse Reinforcement Learning</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day" "tutorial">Tue 04/21</td>
+  <td class="topic">Intermediate Presentation</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Thu 04/23</td>
+  <td class="topic">Project Meetings</td>
+  <td class="reading">&nbsp;</td>
+  <td class="assignment" rowspan="5">Final Project</td>
+</tr>
+<tr>
+  <td class="day">Tue 04/28</td>
+  <td class="topic">Project Meetings</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Thu 04/30</td>
+  <td class="topic">Project Meetings</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Tue 05/05</td>
+  <td class="topic">Project Meetings</td>
+  <td class="reading">&nbsp;</td>
+</tr>
+<tr>
+  <td class="day">Thu 05/07</td>
+  <td class="topic">Project Meetings</td>
+  <td class="reading">5. Limitations of the<br>demonstration dataset<br>6. Future directions<br>7. Conclusion</td>
+</tr>
+<tr>
+  <td class="day important" style="color: red;">Tue 05/14<br>(subject to change)</td>
+  <td class="topic important" style="color:red;">Final Project Presentations</td>
+  <td class="reading">&nbsp;</td>
+  <td class="assignment">&nbsp;</td>
+</tr>
+</table>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="office_hours" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Office Hours</h1>
+      
+      <p>Several office hours are offered by various mentors.
+The office hours are held in the basement pc lab/pool in GDC (1.302 / 1.308 / 1.310).
+Always arrive at the beginning of the office.
+The mentors are instructed to end the office hours if there are no students in the first 20 minutes.
+If you run late to an office hour reach out to the respective mentor via e-mail.</p>
+<table class="officehours">
+ <tr>
+   <th class="time"></th>
+   <th>Monday</th>
+   <th>Tuesday</th>
+   <th>Wednesday</th>
+   <th>Thursday</th>
+   <th>Friday</th>
+ </tr>
+ <tr>
+   <td class="time" >10:30</td>
+   <td></td><td></td><td></td><td></td><td></td>
+ </tr>
+ <tr>
+   <td class="time" >11:00</td>
+   <td class="entry color01" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="selaromyddet" data-domain="ude.saxetu"></span>&#32;
+<script id="7971086bb923485b5d846b07312c5810">
+  var scriptTag = document.getElementById("7971086bb923485b5d846b07312c5810");
+  var link = document.createElement("a");
+  var address = "selaromyddet".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Theodore";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td class="entry color02" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="eulbuost" data-domain="ude.saxetu"></span>&#32;
+<script id="00824a5c25ba5af37a4a4d25b0b2bb86">
+  var scriptTag = document.getElementById("00824a5c25ba5af37a4a4d25b0b2bb86");
+  var link = document.createElement("a");
+  var address = "eulbuost".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Christine";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td class="entry color01" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="selaromyddet" data-domain="ude.saxetu"></span>&#32;
+<script id="2e8c033d8d2dcbd2406f490144d1ec07">
+  var scriptTag = document.getElementById("2e8c033d8d2dcbd2406f490144d1ec07");
+  var link = document.createElement("a");
+  var address = "selaromyddet".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Theodore";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td class="entry color02" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="eulbuost" data-domain="ude.saxetu"></span>&#32;
+<script id="00824a5c25ba5af37a4a4d25b0b2bb86">
+  var scriptTag = document.getElementById("00824a5c25ba5af37a4a4d25b0b2bb86");
+  var link = document.createElement("a");
+  var address = "eulbuost".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Christine";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td></td>
+ </tr>
+ <tr>
+   <td class="time" >11:30</td>
+   <td></td>
+ </tr>
+ <tr>
+   <td class="time" >12:00</td>
+   <td class="entry color03" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="990llienoniloc" data-domain="ude.saxetu"></span>&#32;
+<script id="5b26eb5060bc7de1ade26f2555f7dc7a">
+  var scriptTag = document.getElementById("5b26eb5060bc7de1ade26f2555f7dc7a");
+  var link = document.createElement("a");
+  var address = "990llienoniloc".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Colin";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td></td><td class="entry color03" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="990llienoniloc" data-domain="ude.saxetu"></span>&#32;
+<script id="9ff434d5e82a0553a2294bf0a20d0f62">
+  var scriptTag = document.getElementById("9ff434d5e82a0553a2294bf0a20d0f62");
+  var link = document.createElement("a");
+  var address = "990llienoniloc".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Colin";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td></td><td></td>
+ </tr>
+ <tr>
+   <td class="time" >12:30</td>
+   <td></td><td></td><td></td>
+ </tr>
+ <tr>
+   <td class="time" >13:00</td>
+   <td class="entry color04" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="nartchpets" data-domain="ude.saxetu"></span>&#32;
+<script id="5355173932b71565c61918ea68c05ce1">
+  var scriptTag = document.getElementById("5355173932b71565c61918ea68c05ce1");
+  var link = document.createElement("a");
+  var address = "nartchpets".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Stephanie";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td class="entry color05" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="8582hjk" data-domain="ude.saxetu"></span>&#32;
+<script id="daa1212a5d5877ec4ea36b8aa0a0a1ba">
+  var scriptTag = document.getElementById("daa1212a5d5877ec4ea36b8aa0a0a1ba");
+  var link = document.createElement("a");
+  var address = "8582hjk".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Kevin";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td class="entry color04" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="nartchpets" data-domain="ude.saxetu"></span>&#32;
+<script id="e258213d0f99767a52c44a9032030d17">
+  var scriptTag = document.getElementById("e258213d0f99767a52c44a9032030d17");
+  var link = document.createElement("a");
+  var address = "nartchpets".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Stephanie";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td></td><td></td>
+ </tr>
+ <tr>
+   <td class="time" >13:30</td>
+   <td></td><td></td>
+ </tr>
+ <tr>
+   <td class="time" >14:00</td>
+   <td></td><td class="entry color06" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="iksawons" data-domain="ude.saxetu"></span>&#32;
+<script id="1a61513d05e03968e78638929aaec19e">
+  var scriptTag = document.getElementById("1a61513d05e03968e78638929aaec19e");
+  var link = document.createElement("a");
+  var address = "iksawons".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Sydney";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td></td><td class="entry color06" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="iksawons" data-domain="ude.saxetu"></span>&#32;
+<script id="c1a16b821e0169306d1e87fd64a5ed10">
+  var scriptTag = document.getElementById("c1a16b821e0169306d1e87fd64a5ed10");
+  var link = document.createElement("a");
+  var address = "iksawons".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Sydney";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td  class="entry color05" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="8582hjk" data-domain="ude.saxetu"></span>&#32;
+<script id="343d45b62f745f18f97c531a65a5da8a">
+  var scriptTag = document.getElementById("343d45b62f745f18f97c531a65a5da8a");
+  var link = document.createElement("a");
+  var address = "8582hjk".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Kevin";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td>
+ </tr>
+ <tr>
+   <td class="time" >14:30</td>
+   <td></td><td></td>
+ </tr>
+ <tr>
+   <td class="time" >15:00</td>
+   <td class="entry color07" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="nosmohtmahli" data-domain="moc.liamg"></span>&#32;
+<script id="56cd7c8e3b4d65c76d8d902cf380a393">
+  var scriptTag = document.getElementById("56cd7c8e3b4d65c76d8d902cf380a393");
+  var link = document.createElement("a");
+  var address = "nosmohtmahli".split('').reverse().join('') + "@" + "moc.liamg".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Ilham";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td></td><td class="entry color08" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="repeelhcaz" data-domain="ude.saxetu"></span>&#32;
+<script id="146b5f853960398267430bee089203ed">
+  var scriptTag = document.getElementById("146b5f853960398267430bee089203ed");
+  var link = document.createElement("a");
+  var address = "repeelhcaz".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Zach";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td></td><td class="entry color07" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="nosmohtmahli" data-domain="moc.liamg"></span>&#32;
+<script id="17fa7e043a63b710598f5727cc446338">
+  var scriptTag = document.getElementById("17fa7e043a63b710598f5727cc446338");
+  var link = document.createElement("a");
+  var address = "nosmohtmahli".split('').reverse().join('') + "@" + "moc.liamg".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Ilham";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td>
+ </tr>
+ <tr>
+   <td class="time" >15:30</td>
+   <td class="entry color09" rowspan="3"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="vokituoil" data-domain="ude.saxetu"></span>&#32;
+<script id="3dcc80ca53bb0cda8f1a8162dda8a1dc">
+  var scriptTag = document.getElementById("3dcc80ca53bb0cda8f1a8162dda8a1dc");
+  var link = document.createElement("a");
+  var address = "vokituoil".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Lecture";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td class="entry color09" rowspan="3"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="vokituoil" data-domain="ude.saxetu"></span>&#32;
+<script id="1a6dfeb533f2195d94273a27343c1f0a">
+  var scriptTag = document.getElementById("1a6dfeb533f2195d94273a27343c1f0a");
+  var link = document.createElement("a");
+  var address = "vokituoil".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Lecture";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+
+ </tr>
+ <tr>
+   <td class="time" >16:00</td>
+   <td></td><td></td><td></td>
+ </tr>
+ <tr>
+   <td class="time" >16:30</td>
+   <td></td><td></td><td></td>
+ </tr>
+ <tr>
+   <td class="time" >17:00</td>
+   <td  class="entry color08" rowspan="2"><style type="text/css">
+  .cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="repeelhcaz" data-domain="ude.saxetu"></span>&#32;
+<script id="064e1e8057969f70b5ac5de0a7143fbf">
+  var scriptTag = document.getElementById("064e1e8057969f70b5ac5de0a7143fbf");
+  var link = document.createElement("a");
+  var address = "repeelhcaz".split('').reverse().join('') + "@" + "ude.saxetu".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerHTML = "Zach";
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+</td><td></td><td></td><td></td><td></td>
+ </tr>
+ <tr>
+   <td class="time" >17:30</td>
+   <td></td><td></td><td></td><td></td>
+ </tr>
+ <tr>
+   <td class="time" >18:00</td>
+   <td></td><td></td><td></td><td></td><td></td>
+ </tr>
+ </table>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="academic_honesty" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Academic Honesty Policy</h1>
+      
+      <p>You are encouraged to discuss the readings and concepts with classmates, but all written work must be your own. Programming assignments must be your own, except for 2-person teams when teams are authorized.
+You may NOT look online for existing implementations of algorithms related to the programming assignments, even as a reference.
+Your code will be analyzed by automatic tools that detect plagiarism to ensure that it is original.
+<br>
+<b>Students caught cheating will automatically fail the course and will be reported to the university.</b>
+If in doubt about the ethics of any particular action, look at the <a href="http://www.cs.utexas.edu/users/ear/CodeOfConduct.html#honesty" target="_blank">departmental guidelines</a> and/or ask — ignorance of the rules will not shield you from potential consequences.</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="notice_about_disabilities" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Notice About Students With Disabilities</h1>
+      
+      <p>The University of Texas at Austin provides upon request appropriate academic accommodations for qualified students with disabilities.
+For more information, contact the Division of Diversity and Community Engagement — Services for Students with Disabilities at 512-471-6529; 512-471-4641 TTY.</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="notice_about_missed_work" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Notice About Missed Work Due To Religious Holy Days</h1>
+      
+      <p>A student who misses an examination, work assignment, or other project due to the observance of a religious holy day will be given an opportunity to complete the work missed within a reasonable time after the absence, provided that he or she has properly notified the instructor. It is the policy of the University of Texas at Austin that the student must notify the instructor at least fourteen days prior to the classes scheduled on dates he or she will be absent to observe a religious holy day. For religious holy days that fall within the first two weeks of the semester, the notice should be given on the first day of the semester. The student will not be penalized for these excused absences, but the instructor may appropriately respond if the student fails to complete satisfactorily the missed assignment or examination within a reasonable time after the excused absence.</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="../../js/academic.min.cced88703519f6205e9ae7af47f37801.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

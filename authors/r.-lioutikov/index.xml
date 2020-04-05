@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R. Lioutikov | Rudolf Lioutikov</title>
+    <link>https://www.cs.utexas.edu/~rudi/authors/r.-lioutikov/</link>
+      <atom:link href="https://www.cs.utexas.edu/~rudi/authors/r.-lioutikov/index.xml" rel="self" type="application/rss+xml" />
+    <description>R. Lioutikov</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cs.utexas.edu/~rudi/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png</url>
+      <title>R. Lioutikov</title>
+      <link>https://www.cs.utexas.edu/~rudi/authors/r.-lioutikov/</link>
+    </image>
+    
+    <item>
+      <title>Learning Attribute Grammars for Movement Primitive Sequencing</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovj-19/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovj-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inducing Probabilistic Context-Free Grammars for the Sequencing of Robot Movement Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovc-18/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovc-18/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parsing Motion and Composing Behavior for Semi-Autonomous Manipulation</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovt-18/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovt-18/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Context-Driven Movement Primitive Adaptation</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/wilbersc-17/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/wilbersc-17/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guiding Trajectory Optimization by Demonstrated Distributions</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/osaj-17/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/osaj-17/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Movement Primitive Libraries through Probabilistic Segmentation</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovj-17/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovj-17/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phase Estimation for Fast Action Recognition and Trajectory Generation in Human-Robot Collaboration</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedaj-17-b/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedaj-17-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Movement Primitives for Coordination of Multiple Human-Robot Collaborative Tasks</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedaj-17-a/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedaj-17-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Prioritization of Movement Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/paraschosj-17/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/paraschosj-17/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anticipative Interaction Primitives for Human-Robot Collaboration</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedac-16/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedac-16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Demonstration Based Trajectory Optimization for Generalizable Robot Motions</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/koertc-16/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/koertc-16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proactive Human-Robot Collaboration with Interaction Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedaw-16/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedaw-16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Probabilistic Framework for Semi-Autonomous Robots Based on Interaction Primitives with Phase Estimation</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedac-15/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedac-15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Multiple Collaborative Tasks with a Mixture of Interaction Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/ewertonc-15/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/ewertonc-15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Low-cost Sensor Glove with Force Feedback for Learning from Demonstrations using Probabilistic Trajectory Representations</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/rueckertw-15/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/rueckertw-15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model-Based Relative Entropy Stochastic Search</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/abdolmalekic-15/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/abdolmalekic-15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Segmentation Applied to an Assembly Task</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovc-15/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovc-15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semi-Autonomous 3rd-Hand Robot</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lopesw-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lopesw-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generalizing Movements with Information Theoretic Stochastic Optimal Control</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovj-14/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovj-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Interaction for Collaborative Tasks with Probabilistic Movement Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedac-14/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedac-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Manipulation by Sequencing Motor Primitives with a Two-Armed Robot</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovc-14-a/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovc-14-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling Spatio-Temporal Variability in Human-Robot Interaction with Probabilistic Movement Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/ewertonw-14/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/ewertonw-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sample-Based Information-Theoretic Stochastic Optimal Control</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovc-2014-b/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovc-2014-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards a Third Hand</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-14/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning time-dependent Feedback Policies with Model-Based Policy Search</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovt-13/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovt-13/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

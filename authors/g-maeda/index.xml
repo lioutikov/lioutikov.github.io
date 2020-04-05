@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>G Maeda | Rudolf Lioutikov</title>
+    <link>https://www.cs.utexas.edu/~rudi/authors/g-maeda/</link>
+      <atom:link href="https://www.cs.utexas.edu/~rudi/authors/g-maeda/index.xml" rel="self" type="application/rss+xml" />
+    <description>G Maeda</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cs.utexas.edu/~rudi/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png</url>
+      <title>G Maeda</title>
+      <link>https://www.cs.utexas.edu/~rudi/authors/g-maeda/</link>
+    </image>
+    
+    <item>
+      <title>A Graph-Search Based Approach for Movement Primitive Sequencing</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-18-a/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-18-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling Spatio-Temporal Variability in Human-Robot Interaction with Probabilistic Movement Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/ewertonw-14/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/ewertonw-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards a Third Hand</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-14/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-14/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

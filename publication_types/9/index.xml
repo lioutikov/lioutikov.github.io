@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>9 | Rudolf Lioutikov</title>
+    <link>https://www.cs.utexas.edu/~rudi/publication_types/9/</link>
+      <atom:link href="https://www.cs.utexas.edu/~rudi/publication_types/9/index.xml" rel="self" type="application/rss+xml" />
+    <description>9</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cs.utexas.edu/~rudi/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png</url>
+      <title>9</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication_types/9/</link>
+    </image>
+    
+    <item>
+      <title>A Graph-Search Based Approach for Movement Primitive Sequencing</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-18-a/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-18-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Intuitive Grammars for Movement Primitive Sequences</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-18-b/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-18-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Movement Primitive Sequencing via Attribute Grammars</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-18-c/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-18-c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proactive Human-Robot Collaboration with Interaction Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedaw-16/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedaw-16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Low-cost Sensor Glove with Force Feedback for Learning from Demonstrations using Probabilistic Trajectory Representations</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/rueckertw-15/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/rueckertw-15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semi-Autonomous 3rd-Hand Robot</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lopesw-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lopesw-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling Spatio-Temporal Variability in Human-Robot Interaction with Probabilistic Movement Primitives</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/ewertonw-14/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/ewertonw-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards a Third Hand</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-14/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-14/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

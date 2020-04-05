@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>O. Kroemer | Rudolf Lioutikov</title>
+    <link>https://www.cs.utexas.edu/~rudi/authors/o.-kroemer/</link>
+      <atom:link href="https://www.cs.utexas.edu/~rudi/authors/o.-kroemer/index.xml" rel="self" type="application/rss+xml" />
+    <description>O. Kroemer</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cs.utexas.edu/~rudi/images/icon_huac2f0e7cf94606fa62b29b41026a3d77_2306_512x512_fill_lanczos_center_2.png</url>
+      <title>O. Kroemer</title>
+      <link>https://www.cs.utexas.edu/~rudi/authors/o.-kroemer/</link>
+    </image>
+    
+    <item>
+      <title>Probabilistic Movement Primitives for Coordination of Multiple Human-Robot Collaborative Tasks</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/maedaj-17-a/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/maedaj-17-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semi-Autonomous 3rd-Hand Robot</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lopesw-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lopesw-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Manipulation by Sequencing Motor Primitives with a Two-Armed Robot</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovc-14-a/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovc-14-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards a Third Hand</title>
+      <link>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-14/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.cs.utexas.edu/~rudi/publication/lioutikovw-14/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
